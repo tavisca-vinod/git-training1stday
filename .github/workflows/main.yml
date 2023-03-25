@@ -1,0 +1,9 @@
+name: github action demo
+run-name: ${{ github.actor }} welcomes you to github actions
+on: [push]
+jobs:
+  exploring-some-steps:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "I like vadapav"
+      - run: hostname
